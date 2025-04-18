@@ -49,7 +49,6 @@ def clean_data(df):
     df.bfill(inplace=True)
     
     return df
-
 def add_features(df):
     """Add temporal and statistical features"""
     # Temporal features

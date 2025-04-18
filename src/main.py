@@ -5,11 +5,11 @@ import joblib
 import matplotlib.pyplot as plt
 from datetime import datetime, timedelta
 from tensorflow.keras.models import load_model
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprcessing import MinMaxScaler
 
 def get_project_root():
     """Get the root directory of the project"""
-    current_dir = os.path.dirname(os.path.abspath(__file__))
+    current_dir = os.path.dirname(os.path.abspath(_file_))
     return os.path.dirname(current_dir)
 
 def load_artifacts():
@@ -169,7 +169,6 @@ def main():
             print("\n" + "="*50)
             print(f"Predicted AQI: {predicted_aqi:.2f} ({category})")
             print("="*50)
-            
             # Save prediction
             save_prediction(result)
             
@@ -188,5 +187,5 @@ def main():
             print(f"An error occurred: {str(e)}")
             break
 
-if __name__ == "__main__":
+if _name_ == "_main_":
     main()
